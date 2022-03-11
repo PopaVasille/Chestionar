@@ -1,12 +1,11 @@
 <template>
-  <h1> Toate chestioanrele</h1>
+  <PageComponent title="Dashboard">
+    Aici avem continut
+  </PageComponent> 
 </template>
 
-<script>
-export default{
-name: 'Surveys'
-}
+<script setup>
+import PageComponent from "../components/PageComponent.vue";
+
 </script>
 
-<style scoped>
-</style>

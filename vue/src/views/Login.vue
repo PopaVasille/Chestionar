@@ -15,24 +15,14 @@
   ```
 -->
 <template>
-  <!--
-    This example requires updating your template:
-
-    ```
-    <html class="h-full bg-gray-50">
-    <body class="h-full">
-    ```
-  -->
-  <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-md w-full space-y-8">
       <div>
         <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Autentifica-te</h2>
-        <!-- <p class="mt-2 text-center text-sm text-gray-600">
-          Or
+        <p class="mt-2 text-center text-sm text-gray-600">
+          Sau
           {{ ' ' }}
-          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> start your 14-day free trial </a>
-        </p> -->
+          <router-link :to="{name:'Register'}" class="font-medium text-indigo-600 hover:text-indigo-500"> Incearca acum </router-link>
+        </p>
       </div>
       <form class="mt-8 space-y-6" action="#" method="POST">
         <input type="hidden" name="remember" value="true" />
@@ -53,9 +43,7 @@
             <label for="remember-me" class="ml-2 block text-sm text-gray-900"> Remember me </label>
           </div>
 
-          <div class="text-sm">
-            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Forgot your password? </a>
-          </div>
+          
         </div>
 
         <div>
@@ -67,8 +55,6 @@
           </button>
         </div>
       </form>
-    </div>
-  </div>
 </template>
 
 <script>
